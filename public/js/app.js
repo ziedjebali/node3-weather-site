@@ -1,5 +1,3 @@
-console.log('Client side javascript file is loaded!')
-
 //fetch api is only on client side
 // fetch('http://puzzle.mead.io/puzzle').then((response) => {
 //     response.json().then((data) => {
@@ -19,7 +17,7 @@ weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
     const location = search.value
-    
+
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
 
