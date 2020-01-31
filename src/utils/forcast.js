@@ -9,7 +9,9 @@ const forecast = (latitude, longitude, callback) => {
             } else if (body.error){
                 callback('Incorrect Input!')
             } else {
-                callback(undefined, body.currently.temperature)
+                callback(undefined, 'It is currently ' + body.currently.temperature + ' degrees. It is currently ' 
+                + body.currently.summary + '. The humidity levels are ' + body.currently.humidity + '. The wind speed is '
+                + body.currently.windSpeed +'.')
         }
     })
 }
